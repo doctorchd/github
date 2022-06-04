@@ -1,0 +1,32 @@
+chd@inspiron15:~/git/linux$ g push
+Username for 'https://github.com': doctorchd
+Password for 'https://doctorchd@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/doctorchd/linux.git/'
+
+
+https://github.com/
+Profile --> Settings
+Developer settings
+Personal access tokens
+Generate new token
+	Note: Inspiron
+	Expiration: 90 days
+	Scope: repo
+	Generate token
+	Copy token, i.e.:
+
+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
+
+$ git remote -v
+origin	https://github.com/doctorchd/github.git (fetch)
+origin	https://github.com/doctorchd/github.git (push)
+
+$ git remote set-url origin https://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@github.com/doctorchd/github.git
+
+$ git remote -v
+origin	https://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@github.com/doctorchd/github.git (fetch)
+origin	https://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@github.com/doctorchd/github.git (push)
+
+
