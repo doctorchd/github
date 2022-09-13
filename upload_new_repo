@@ -1,0 +1,20 @@
+#
+# https://gist.github.com/mindplace/b4b094157d7a3be6afd2c96370d39fad
+#
+
+# this is done only once
+git config --global init.defaultBranch master
+
+cd Work/git/warcloud
+git add .
+git commit -m 'initial commit'
+
+* https://github.com/
+* '+' --> New repository
+* Repository name: openvpn
+* Private: yes
+* Create repository
+
+git remote add origin git@github.com:doctorchd/openvpn.git
+git push --set-upstream origin master
+
